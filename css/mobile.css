@@ -252,6 +252,7 @@
     -webkit-transition: 0.5s;
     transition: 0.5s;
     right: 20px;
+    background-color: pink;
   }
   .container .banner-ILO {
     width: 100%;
@@ -299,11 +300,12 @@
     width: 100%;
   }
   .container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages img {
-    width: 200px;
+    width: 100px;
     height: 300px;
   }
   .container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages img.female {
-    width: 200px;
+    width: 100px;
+    display: block;
     height: 300px;
     margin-top: 7%;
   }
@@ -396,8 +398,8 @@
     padding: 100px 10px;
     margin-top: -12%;
     background-position-y: 101%;
-    -webkit-clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
   }
   .container .ilo-landing-pages-2 .row-ilo-landing-pages-3 {
     -webkit-box-orient: vertical;
@@ -472,6 +474,7 @@
             flex-direction: column;
     width: 100%;
     margin-top: 10%;
+    margin-right: 0px;
   }
   .container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4 .box-ilo-landing-pages-3-2-4.flex img {
     display: block;
@@ -492,11 +495,15 @@
   }
   .container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4.reverse .box-ilo-landing-pages-3-2-4.bigger {
     width: 100%;
-    margin-top: 20%;
+    margin-top: 75%;
     text-align: center;
   }
   .container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4.reverse .box-ilo-landing-pages-3-2-4.bigger p {
     width: 100%;
+  }
+  .container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4.reverse .box-ilo-landing-pages-3-2-4.flex {
+    margin-right: 0px;
+    margin-top: 0;
   }
   .container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4.reverse img {
     width: 90%;
@@ -521,7 +528,7 @@
     margin-top: 5%;
   }
   .container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-4-1-1 .box-ilo-landing-pages-4-1-2 p {
-    margin-top: 200px;
+    margin-top: 400px;
     width: 100%;
     text-align: center;
   }
@@ -592,7 +599,7 @@
     -webkit-clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
             clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
     margin-top: -10.7%;
-    background-position-y: 101%;
+    background-position-y: 100%;
   }
   .container .ilo-landing-pages-4 .row-ilo-landing-pages-4 {
     -webkit-box-orient: vertical;
