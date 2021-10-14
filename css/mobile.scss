@@ -1,0 +1,669 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+@media (max-width:900px){
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        overflow-x: hidden;
+        .btn.scroll{
+            transform: rotate(-360deg);
+            transition: 0.5s;
+            right: 20px;
+        }
+        .banner-ILO{
+            width: 100%;
+            background-position-y: 106.5%;
+            .box-banner-ilo-2{
+                width: 90%;
+                h1{
+                    position: relative;
+                    z-index: 10;
+                }
+                .box-img-banner{
+                    width: 20%;
+                    left: -5%;
+                }
+                .box-img-banner::after{
+                    width: 200px;
+                    left: -25%;
+                    background-size: contain;
+                }
+            }
+        }
+        .box-ilo-landing{
+            padding: 100px 50px;
+            .row-ilo-landing{
+                .box-ilo-landing-pages{
+                    width: 100%;
+                }
+                .box-ilo-landing-pages-2{
+                    width: 100%;
+                    .text-ilo{
+                        width: 45%;
+                        text-align: center;
+                    }
+                    .text-ilo.right{
+                        width: 45%;
+                        text-align: center;
+                    }
+                }
+                .box-ilo-landing-pages-2-1{
+                    width: 100%;
+                    justify-content: center;
+                    flex-direction: row;
+                    .box-ilo-landing-pages-2-1-inside{
+                        width: 60%;
+                        height: auto;
+                        text-align: center;
+                        margin-top: 5%;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                }
+                .box-ilo-landing-pages-2-1-inside-2{
+                    width: 100%;
+                    .box-ilo-landing-pages-2-1-inside-2-1{
+                        width: 400px;
+                        img{
+                            width: 90%;
+                            height: 60%;
+                        }
+                        .box-ilo-landing-pages-comment{
+                            width: 100%;
+                            flex-direction: column;
+                            margin: 20px auto;
+                            img{
+                                display: block;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+        .ilo-landing-pages-2{
+            padding: 100px 50px;
+            clip-path: polygon(0 0, 100% 7%, 100% 99%, 0% 100%);
+            margin-top: -13%;
+            background-position-y: 102.7%;
+            .row-ilo-landing-pages-3{
+                flex-direction: row;
+                .box-ilo-landing-pages-3{
+                    width: 50%;
+                    .box-ilo-landing-comments-3{
+                        flex-direction: column;
+                    }
+                    .box-ilo-landing-pages-3{
+                        flex-direction: column;
+                    }
+                }
+                .box-ilo-landing-pages-3.lebar{
+                    width: 50%;
+                }
+            }
+        }
+        .ilo-landing-pages-3{
+            padding: 100px 50px;
+            .row-ilo-landing-pages-4{
+                flex-wrap: wrap;
+                .ilo-landing-pages-3-4{
+                    width: 100%;
+                    .box-ilo-landing-pages-3-4{
+                        width: 50%;
+                        img{
+                            width: 300px;
+                            height: auto;
+                        }
+                        img.seminar{
+                            width: 300px;
+                            height: auto;
+                            margin-left: 50px;
+                        }
+                    }
+                }
+                .ilo-landing-pages-3-1-4{
+                    width: 100%;
+                    .box-ilo-landing-pages-3-2-4.flex{
+                        width: 60%;
+                        margin-top: -20%;
+                        text-align: justify;
+                        flex-direction: column;
+                        img{
+                            margin-top: 20px;
+                            margin-bottom: 10px;
+                            display: block;
+                        }
+                    }
+                    img{
+                        width: 300px;
+                        height: auto;
+                    }
+                }
+                .ilo-landing-pages-3-1-4.reverse{
+                    width: 100%;
+                    .box-ilo-landing-pages-3-2-4.bigger{
+                        text-align: justify;
+                    }
+                    .box-ilo-landing-pages-3-2-4.flex{
+                        text-align: justify;
+                        margin-right: -420px;
+                        text-align: center;
+                        margin-top: 140px;
+                    }
+                    img{
+                        width: 300px;
+                        height: auto;
+                    }
+                    
+                }
+            }
+        }
+        .ilo-landing-pages-4{
+            padding: 100px 50px;
+            margin-top: -10%;
+            background-image: url(../images/path3.png);
+            background-size: contain;
+            background-position-y: 670px;
+        }
+        .ilo-landing-pages-4-1-2{
+            padding: 100px 50px;
+            .row-ilo-landing-pages-4-1-2{
+                .box-ilo-landing-pages-4-1-2{
+                    width: 100%;
+                    img{
+                        width: 300px;
+                        height: auto;
+                    }
+                    img.door{
+                        width: 200px;
+                        height: auto;
+                    }
+                    .text-ilo-landing-pages-4-1-2{
+                        width: 350px;
+                    }
+                }
+                .box-ilo-landing-pages-4-1-3{
+                    width: 100%;
+                    img{
+                        width: 300px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+        .ilo-landing-page-5{
+            padding: 100px 50px;
+            .row-ilo-landing-page-5{
+                .box-ilo-landing-page-5.small{
+                    width: 100%;
+                    img{
+                        width: 300px;
+                        height: auto;
+                    }
+                }
+                span{
+                    width: 100%;
+                }
+            }
+        }
+        .footer-ilo-landing{
+            padding: 100px 50px;
+            background-position-y: -35px;
+        }
+    }
+}
+@media screen and (max-width:620px){
+    .container{
+        width:100%;
+        min-height: 100vh;
+        overflow-x: hidden;
+        .btn.scroll{
+            transform: rotate(-360deg);
+            transition: 0.5s;
+            right: 20px;
+        }
+        .banner-ILO{
+            width: 100%;
+            background-position-y: 102.5%;
+            .box-banner-ilo-2{
+                width: 90%;
+                h1{
+                    font-size: 20px;
+                    position: relative;
+                    z-index: 10;
+                }
+                .box-img-banner{
+                    width: 30%;
+                    left: -10%;
+                    top: 10%;
+                    background-size: contain;
+                }
+                .box-img-banner::after{
+                    width: 150px;
+                    background-size: contain;
+                    left: -14%;
+                    top:70%;
+                }
+                .box-img-banner::before{
+                    top: -47%;
+                    left: 45%;
+                }
+                .box-img-banner-2{
+                    width: 60%;
+                    right: -20%;
+                    background-size: contain;
+                }
+                .box-img-banner-2::after{
+                    top: 10px;
+                    right: 35%;
+                }
+            }
+        }
+        .box-ilo-landing{
+            padding: 100px 10px;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            .row-ilo-landing{
+                .box-ilo-landing-pages{
+                    width: 100%;
+                    img{
+                        width: 200px;
+                        height: 300px;
+                    }
+                    img.female{
+                        width: 200px;
+                        height: 300px;
+                        margin-top: 7%;
+                    }
+                    span{
+                        width: 200px;
+                        font-size: 15px;
+                    }
+                    span::after{
+                        width: 30px;
+                        height: 40px;
+                        bottom: 23%;
+                    }
+                    span.female{
+                        font-size: 15px;
+                    }
+                    span.female::after{
+                        width: 30px;
+                        height: 40px;
+                        bottom: 35px;
+                    }
+                }
+                .box-ilo-landing-pages-2{
+                    width: 100%;
+                    flex-direction: column;
+                    .text-ilo{
+                        width: 100%;
+                        text-align: center;
+                    }
+                    .text-ilo.right{
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+                .box-ilo-landing-pages-2-1{
+                    width: 100%;
+                    .box-ilo-landing-pages-2-1-inside{
+                        width: 100%;
+                        flex-direction: column;
+                        margin-top: 5%;
+                        align-items: center;
+                        height: auto;
+                        .text-inside{
+                            text-align: center;
+                            width: 100%;
+                        }
+                    }
+                }
+                .box-ilo-landing-pages-2-1-inside-2{
+                    width: 100%;
+                    flex-direction: column;
+                    .box-ilo-landing-pages-2-1-inside-2-1{
+                        width: 100%;
+                        margin-top: 5%;
+                        .box-text-landing-pages{
+                            width: 100%;
+                            margin-bottom: 20px;
+                            span{
+                                margin-top: 5px;
+                            }
+                        }
+                        .box-ilo-landing-pages-comment{
+                            width: 100%;
+                            flex-direction: column;
+                            img{
+                                width: 150px;
+                                height: 150px;
+                            }
+                            p{
+                                margin-top: 20px;
+                                text-align: center;
+                                margin-left: 0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .ilo-landing-pages-2{
+            padding: 100px 10px;
+            margin-top: -12%;
+            background-position-y: 101%;
+            clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
+            .row-ilo-landing-pages-3{
+                flex-direction: column;
+                .box-ilo-landing-pages-3{
+                    width: 100%;
+                    .text-ilo-landing-pages-3{
+                        width: 90%;
+                        font-size: 17px;
+                    }
+                    .box-ilo-landing-comments-3{
+                        flex-direction: column;
+                        text-align: center;
+                    }
+                }
+                .box-ilo-landing-pages-3.lebar{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+        .ilo-landing-pages-3{
+            padding: 100px 10px;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            .row-ilo-landing-pages-4{
+                .box-ilo-landing-pages-3{
+                    width: 100%;
+                }
+                .ilo-landing-pages-3-4{
+                    width: 100%;
+                    .box-ilo-landing-pages-3-4{
+                        margin: 0px 20px;
+                        width: 100%;
+                        text-align: center;
+                        p{
+                            width: 100%;
+                            margin: 0px auto;
+                        }
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                        img.seminar{
+                            width: 80%;
+                            margin-top: 10%;
+                            height: 90%;
+                        }
+                    }
+                }
+                .ilo-landing-pages-3-1-4{
+                    width: 100%;
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+                    .box-ilo-landing-pages-3-2-4{
+                        text-align: center;
+                        width: 100%;
+                    }
+                    .box-ilo-landing-pages-3-2-4.flex{
+                        flex-direction: column;
+                        width: 100%;
+                        margin-top: 10%;
+                        img{
+                            display: block;
+                            margin-bottom: 20px;
+                            margin-top: 7%;
+                        }
+                    }
+                    img{
+                        margin: 20px auto;
+                    }
+                }
+                .ilo-landing-pages-3-1-4.reverse{
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+                    margin-top: 60%;
+                    .box-ilo-landing-pages-3-2-4.bigger{
+                        width: 100%;
+                        margin-top: 20%;
+                        text-align: center;
+                        p{
+                            width: 100%;
+                        }
+                    }
+                    img{
+                        width: 90%;
+                        margin-top: 10%;
+                    }
+                }
+                .ilo-landing-pages-4-1-1{
+                    width: 100%;
+                    flex-direction: column;
+                    margin-top: 140%;
+                    padding: 5px;
+                    img{
+                        margin-top: 10%;
+                        width: 80%;
+                        height: 80%;
+                    }
+                    .box-ilo-landing-pages-4-1-2{
+                        width: 100%;
+                        margin-top: 5%;
+                        p{
+                            margin-top: 200px;
+                            width: 100%;
+                            text-align: center;
+                        }
+                        p.edit{
+                            margin-top: 50px;
+                        }
+
+                    }
+                }
+                .box-ilo-landing-pages-4-1-3{
+                    width: 100%;
+                    flex-direction: column;
+                    img{
+                        display: block;
+                        margin-bottom: 20px;
+                    }
+                }
+                .box-ilo-landing-pages-4{
+                    width: 100%;
+                    flex-direction: column-reverse;
+                    img{
+                        display: block;
+                        width: 90%;
+                        height: 90%;
+                        margin-top: 5%;
+                    }
+                    .text-ilo-landing-pages-4{
+                        width: 100%;
+                        margin-left: 0px;
+                        margin-top: 10%;
+                        text-align: center;
+                    }
+                }
+                .box-ilo-landing-pages-4.reverse{
+                    width: 100%;
+                    flex-direction: column-reverse;
+                    img{
+                        width: 90%;
+                        height: 90%;
+                    }
+                    .text-ilo-landing-pages-4{
+                        width: 100%;
+                    }
+                }
+                span{
+                    width:100%;
+                }
+                .box-ilo-landing-pages-4{
+                    width: 100%;
+                    p.softskill{
+                        text-align: center;
+                        max-width: 90%;
+                    }
+                    p.internship{
+                        text-align: center;
+                        margin-top: 10%;
+                        max-width: 90%;
+                    }
+                }
+            }
+
+        }
+        .ilo-landing-pages-4{
+            padding: 100px 10px;
+            clip-path: polygon(0 0, 100% 3%, 100% 100%, 0 100%);
+            margin-top: -10.7%;
+            background-position-y: 101%;
+            .row-ilo-landing-pages-4{
+                flex-direction: column;
+                .box-ilo-landing-pages-4{
+                    width: 100%;
+                    img{
+                        width: 90%;
+                        height: 90%;
+                    }
+                }
+                .box-ilo-landing-pages-4-1{
+                    width: 100%;
+                    margin-top: 20%;
+                    p{
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+        .ilo-landing-pages-4-1-2{
+            padding: 100px 10px;
+            span{
+                width: 90%;
+            }
+            .row-ilo-landing-pages-4-1-2{
+                .box-ilo-landing-pages-4-1-2{
+                    width: 100%;
+                    flex-direction: column;
+                    img{
+                        width: 90%;
+                        margin-top: 5%;
+                    }
+                    .text-ilo-landing-pages-4-1-2{
+                        width: 90%;
+                        text-align: center;
+                        p{
+                            span{
+                                text-align: center;
+                                margin-top: 5%;
+                            }
+                        }
+                    }
+                }
+                .box-ilo-landing-pages-4-1-2.reverse{
+                    width: 100%;
+                    flex-direction: column;
+                    img{
+                        margin-top: 10%;
+                        width: 70%;
+                    }
+                    img.door{
+                        margin-right: 0px;
+                    }
+                }
+                .text-ilo-landing-pages-4-1-2-center{
+                    width: 90%;
+                    text-align: center;
+                }
+                .text-ilo-landing-pages-4-1-2-flex{
+                    width: 100%;
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .box-ilo-landing-pages-4-1-3{
+                    width: 100%;
+                    flex-direction: column;
+                    img{
+                        width: 90%;
+                        margin-top: 10%;
+                    }
+                }
+            }
+        }
+        .ilo-landing-page-5{
+            padding: 100px 10px;
+            h2{
+                width: 90%;
+                font-size: 20px;
+            }
+            .row-ilo-landing-page-5{
+                .box-img-1{
+                    width: 100%;
+                    img{
+                        width: 90%;
+                    }
+                    img.guru{
+                        width: 90%;
+                    }
+                }
+                .box-img-2{
+                    width: 100%;
+                    img{
+                        width: 90%;
+                    }
+                    img.seminar{
+                        width: 90%;
+                    }
+                }
+                span.title-landing-page-5{
+                    width: 90%;
+                    font-size: 17px;
+                }
+                .box-ilo-landing-page-5{
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    p{
+                        margin-top: 5%;
+                    }
+                }
+                .box-ilo-landing-page-5.small{
+                    width: 100%;
+                    img{
+                        width: 90%;
+                    }
+                    .text-box-ilo-landing-page-5-small{
+                        width: 100%;
+                        margin-top: 20%;
+                        ul{
+                            li{
+                            text-align: left;
+                            }
+                        }
+                    }
+                }
+                .box-ilo-landing-page-5-flex{
+                    width: 100%;
+                    flex-direction: column;
+                    img{
+                        margin-top: 10%;
+                    }
+                }
+            }
+        }
+        .footer-ilo-landing{
+            padding: 100px 10px;
+            background-position-y: -20px;
+        }
+    // container
+    }
+}

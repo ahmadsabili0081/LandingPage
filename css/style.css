@@ -1,0 +1,1349 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color:#05D2D2;
+  --bg-color:#FAFAFA;
+  --text-color:#404040;
+  --text-comment:#007A90;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.container .btn {
+  position: fixed;
+  bottom: 20px;
+  right: -50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 100;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--text-comment);
+}
+
+.container .btn i {
+  color: var(--primary-color);
+  font-size: 50px;
+}
+
+.container .btn.scroll {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  right: 20px;
+}
+
+.container .banner-ILO {
+  width: 100%;
+  min-height: 100vh;
+  background: url(../images/Path2.png) var(--primary-color);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: 640px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .banner-ILO .box-banner-ilo-2 {
+  width: 850px;
+  height: 450px;
+  border-radius: 25px;
+  background-image: url(../images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+}
+
+.container .banner-ILO .box-banner-ilo-2 h1 {
+  font-family: "Overpass", sans-serif;
+  color: #ffffff;
+  margin: 100px auto;
+}
+
+.container .banner-ILO .box-banner-ilo-2 .box-img-banner::before {
+  content: ' ';
+  width: 150px;
+  height: 100px;
+  background-image: url(../images/chat.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -30%;
+  left: 100%;
+}
+
+.container .banner-ILO .box-banner-ilo-2 .box-img-banner {
+  width: 200px;
+  height: 300px;
+  background-image: url(../images/wisuda.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: -15%;
+}
+
+.container .banner-ILO .box-banner-ilo-2 .box-img-banner::after {
+  content: ' ';
+  width: 300px;
+  position: absolute;
+  top: 60%;
+  left: -40%;
+  height: 300px;
+  background-image: url(../images/mejabuku.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container .banner-ILO .box-banner-ilo-2 .box-img-banner-2 {
+  width: 300px;
+  height: 300px;
+  background-image: url(../images/mejakomputer.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -20%;
+  bottom: 0;
+}
+
+.container .banner-ILO .box-banner-ilo-2 .box-img-banner-2::after {
+  width: 100px;
+  height: 100px;
+  content: ' ';
+  background-image: url(../images/jam.png);
+  background-size: contain;
+  position: absolute;
+  top: -4%;
+  right: 40%;
+  background-repeat: no-repeat;
+}
+
+.container .box-ilo-landing {
+  position: relative;
+  padding: 200px 150px;
+  background-color: var(--bg-color);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+}
+
+.container .box-ilo-landing .text-box-ilo {
+  margin: 0px auto;
+  max-width: 500px;
+  text-align: center;
+  font-family: "Overpass", sans-serif;
+  color: var(--text-color);
+}
+
+.container .box-ilo-landing .text-box-ilo span.biru {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.container .box-ilo-landing .text-box-ilo span.birutua {
+  font-weight: bold;
+  color: #007A90;
+}
+
+.container .box-ilo-landing .row-ilo-landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 5%;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages img {
+  width: 200px;
+  height: 400px;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages img.female {
+  width: 180px;
+  height: 370px;
+  display: block;
+  margin-top: 80px;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages span {
+  font-family: "Overpass", sans-serif;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages span::after {
+  content: ' ';
+  width: 40px;
+  height: 50px;
+  background-image: url(../images/left.png);
+  background-size: contain;
+  position: absolute;
+  bottom: 100px;
+  background-repeat: no-repeat;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages span.female {
+  margin-top: 130px;
+  display: inline-block;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages span.female::after {
+  content: ' ';
+  width: 40px;
+  height: 50px;
+  position: absolute;
+  bottom: 15%;
+  right: 15%;
+  background-image: url(../images/right.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container .box-ilo-landing .row-ilo-landing span {
+  font-family: "Overpass", sans-serif;
+  margin-top: 50px;
+  font-size: 25px;
+  text-align: center;
+  color: #404040;
+}
+
+.container .box-ilo-landing .row-ilo-landing span span {
+  color: #960A55;
+  font-weight: bold;
+}
+
+.container .box-ilo-landing .row-ilo-landing img {
+  width: 90%;
+  margin-top: 5%;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2 {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2 .text-ilo {
+  width: 25%;
+  text-align: right;
+  margin-top: 10%;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2 .text-ilo h3 {
+  font-family: "Overpass", sans-serif;
+  color: #007A90;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2 .text-ilo p {
+  font-family: "Overpass", sans-serif;
+  margin: 20px 0px;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2 .text-ilo p span.text {
+  font-size: 17px;
+  color: #007A90;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2 img {
+  width: 150px;
+  height: 150px;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2 {
+  margin-top: 5%;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2 .text-ilo.right {
+  text-align: left;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1 {
+  width: 100%;
+  height: auto;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1 .box-ilo-landing-pages-2-1-inside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 400px;
+  height: 200px;
+  margin: 0px 20px;
+  padding: 20px 10px;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1 .box-ilo-landing-pages-2-1-inside img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1 .box-ilo-landing-pages-2-1-inside .text-inside {
+  font-size: 15px;
+  margin: 20px 20px;
+  font-family: "Overpass", sans-serif;
+  color: var(--text-comment);
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1-inside-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1-inside-2 .box-ilo-landing-pages-2-1-inside-2-1 {
+  width: 500px;
+  height: auto;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-comment);
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1-inside-2 .box-ilo-landing-pages-2-1-inside-2-1 img {
+  width: 100%;
+  height: 80%;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1-inside-2 .box-ilo-landing-pages-2-1-inside-2-1 .box-text-landing-pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1-inside-2 .box-ilo-landing-pages-2-1-inside-2-1 .box-text-landing-pages span {
+  width: 40%;
+  font-size: 17px;
+  color: var(--text-comment);
+  font-weight: bold;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1-inside-2 .box-ilo-landing-pages-2-1-inside-2-1 .box-text-landing-pages.small {
+  width: 90%;
+  margin: 0px auto;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1-inside-2 .box-ilo-landing-pages-2-1-inside-2-1 .box-text-landing-pages.small p {
+  line-height: 1.8;
+  text-align: justify;
+  color: var(--text-color);
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1-inside-2 .box-ilo-landing-pages-2-1-inside-2-1 .box-text-landing-pages.small p span {
+  font-weight: bold;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1-inside-2 .box-ilo-landing-pages-2-1-inside-2-1 .box-text-landing-pages.small p span.pink {
+  color: #960A55;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1-inside-2 .box-ilo-landing-pages-2-1-inside-2-1 .box-ilo-landing-pages-comment {
+  width: 100%;
+  margin: 50px auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1-inside-2 .box-ilo-landing-pages-2-1-inside-2-1 .box-ilo-landing-pages-comment img {
+  width: 100px;
+  height: 100px;
+}
+
+.container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages-2-1-inside-2 .box-ilo-landing-pages-2-1-inside-2-1 .box-ilo-landing-pages-comment p {
+  line-height: 1.8;
+  color: #404040;
+  text-align: left;
+  margin-left: 40px;
+  color: var(--text-comment);
+}
+
+.container .ilo-landing-pages-2 {
+  position: relative;
+  height: auto;
+  margin-top: -8.9%;
+  padding: 100px 150px;
+  background: url(../images/Path2.png) var(--primary-color);
+  background-size: contain;
+  background-position-y: 930px;
+  background-repeat: no-repeat;
+  -webkit-clip-path: polygon(0 0, 100% 11%, 100% 99%, 0% 100%);
+          clip-path: polygon(0 0, 100% 11%, 100% 99%, 0% 100%);
+}
+
+.container .ilo-landing-pages-2 .row-ilo-landing-pages-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.container .ilo-landing-pages-2 .row-ilo-landing-pages-3 .box-ilo-landing-pages-3 {
+  width: 400px;
+  height: auto;
+}
+
+.container .ilo-landing-pages-2 .row-ilo-landing-pages-3 .box-ilo-landing-pages-3 img {
+  width: 70%;
+  height: 70%;
+  display: block;
+  margin: 20px auto;
+}
+
+.container .ilo-landing-pages-2 .row-ilo-landing-pages-3 .box-ilo-landing-pages-3 img.circlePercentage {
+  width: 200px;
+  display: block;
+  height: 200px;
+  margin: 20px auto;
+}
+
+.container .ilo-landing-pages-2 .row-ilo-landing-pages-3 .box-ilo-landing-pages-3 .text-ilo-landing-pages-3 {
+  text-align: center;
+  width: 70%;
+  margin: 30px auto;
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-color);
+}
+
+.container .ilo-landing-pages-2 .row-ilo-landing-pages-3 .box-ilo-landing-pages-3 .text-ilo-landing-pages-3 span {
+  color: #960A55;
+  font-weight: bold;
+}
+
+.container .ilo-landing-pages-2 .row-ilo-landing-pages-3 .box-ilo-landing-pages-3 span {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+.container .ilo-landing-pages-2 .row-ilo-landing-pages-3 .box-ilo-landing-pages-3 span span {
+  color: #960A55;
+}
+
+.container .ilo-landing-pages-2 .row-ilo-landing-pages-3 .box-ilo-landing-pages-3 p {
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-color);
+  line-height: 1.8;
+}
+
+.container .ilo-landing-pages-2 .row-ilo-landing-pages-3 .box-ilo-landing-pages-3 p span {
+  color: #960A55;
+  font-size: 17px;
+}
+
+.container .ilo-landing-pages-2 .row-ilo-landing-pages-3 .box-ilo-landing-pages-3 .box-ilo-landing-comments-3 {
+  width: 100%;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .ilo-landing-pages-2 .row-ilo-landing-pages-3 .box-ilo-landing-pages-3 .box-ilo-landing-comments-3 img {
+  width: 150px;
+  height: 150px;
+}
+
+.container .ilo-landing-pages-2 .row-ilo-landing-pages-3 .box-ilo-landing-pages-3 .box-ilo-landing-comments-3 p {
+  margin: 10px 20px;
+  font-size: 14px;
+  color: #007A90;
+  text-align: left;
+}
+
+.container .ilo-landing-pages-2 .row-ilo-landing-pages-3 .box-ilo-landing-pages-3.lebar {
+  width: 500px;
+}
+
+.container .ilo-landing-pages-3 {
+  margin-top: -1%;
+  position: relative;
+  padding: 100px 150px;
+  background-color: #FAFAFA;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+}
+
+.container .ilo-landing-pages-3 h1 {
+  font-family: "Noto Sans", sans-serif;
+  width: 550px;
+  text-align: center;
+  margin: 0px auto;
+  color: var(--text-color);
+}
+
+.container .ilo-landing-pages-3 h1 span {
+  color: #960A55;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-4 {
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-4 p {
+  max-width: 350px;
+  line-height: 1.8;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-4 img {
+  width: 400px;
+  height: 300px;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-4 img.seminar {
+  height: 450px;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4 {
+  width: 100%;
+  height: auto;
+  height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 5%;
+  padding: 10px;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4 .box-ilo-landing-pages-3-2-4 {
+  width: 300px;
+  height: auto;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4 .box-ilo-landing-pages-3-2-4 p {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4 .box-ilo-landing-pages-3-2-4 p span {
+  color: #007A90;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4 .box-ilo-landing-pages-3-2-4.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 520px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4 .box-ilo-landing-pages-3-2-4.flex img {
+  width: 100px;
+  height: 100px;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4 .box-ilo-landing-pages-3-2-4.flex p {
+  margin: 0px 20px;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.8;
+  font-size: 16px;
+  color: #007A90;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4 img {
+  width: 300px;
+  height: 400px;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4.reverse {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4.reverse .box-ilo-landing-pages-3-2-4.bigger {
+  width: 450px;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4.reverse .box-ilo-landing-pages-3-2-4.bigger p {
+  width: 400px;
+  line-height: 1.8;
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-color);
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-3-1-4.reverse .box-ilo-landing-pages-3-2-4.bigger p span {
+  color: var(--text-comment);
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-4-1-1 {
+  width: 100%;
+  margin-top: 5%;
+  height: auto;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-4-1-1 img {
+  width: 400px;
+  height: 400px;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-4-1-1 .box-ilo-landing-pages-4-1-2 {
+  width: 550px;
+  height: auto;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-4-1-1 .box-ilo-landing-pages-4-1-2 p {
+  font-size: 17px;
+  width: 70%;
+  line-height: 1.5;
+  margin-top: 5%;
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-color);
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-4-1-1 .box-ilo-landing-pages-4-1-2 .box-ilo-landing-pages-4-1-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-4-1-1 .box-ilo-landing-pages-4-1-2 .box-ilo-landing-pages-4-1-3 img {
+  width: 100px;
+  height: 100px;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .ilo-landing-pages-4-1-1 .box-ilo-landing-pages-4-1-2 .box-ilo-landing-pages-4-1-3 p {
+  font-family: "Noto Sans", sans-serif;
+  color: #007A90;
+  margin: 0px 30px;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .box-ilo-landing-pages-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .box-ilo-landing-pages-4 img {
+  width: 450px;
+  height: 300px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .box-ilo-landing-pages-4 .text-ilo-landing-pages-4 {
+  width: 35%;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .box-ilo-landing-pages-4 .text-ilo-landing-pages-4 p {
+  line-height: 1.5;
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-color);
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .box-ilo-landing-pages-4 .text-ilo-landing-pages-4 p span {
+  color: #007A90;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .box-ilo-landing-pages-4.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .box-ilo-landing-pages-4.reverse .text-ilo-landing-pages-4 {
+  width: 40%;
+}
+
+.container .ilo-landing-pages-3 .row-ilo-landing-pages-4 .box-ilo-landing-pages-4.reverse img.door {
+  width: 200px;
+  height: 400px;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.container .ilo-landing-pages-3 span {
+  width: 450px;
+  line-height: 1.8;
+  font-size: 20px;
+  color: var(--text-color);
+  text-align: center;
+  margin: 5% auto;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.container .ilo-landing-pages-3 span span {
+  color: #007A90;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.container .ilo-landing-pages-4 {
+  position: relative;
+  padding: 150px 100px;
+  margin-top: -7.6%;
+  background-color: var(--primary-color);
+  -webkit-clip-path: polygon(0 0, 100% 11%, 100% 99%, 0% 100%);
+          clip-path: polygon(0 0, 100% 11%, 100% 99%, 0% 100%);
+  background-image: url(/images/Path2.png);
+  background-position-y: 850px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.container .ilo-landing-pages-4 h1 {
+  font-family: "Noto Sans", sans-serif;
+  max-width: 500px;
+  text-align: center;
+  margin: 0px auto;
+  color: var(--text-color);
+}
+
+.container .ilo-landing-pages-4 h1 span {
+  color: #960A55;
+}
+
+.container .ilo-landing-pages-4 .row-ilo-landing-pages-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .ilo-landing-pages-4 .row-ilo-landing-pages-4 .box-ilo-landing-pages-4 {
+  width: 500px;
+  height: auto;
+  margin-top: 5%;
+}
+
+.container .ilo-landing-pages-4 .row-ilo-landing-pages-4 .box-ilo-landing-pages-4 img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .ilo-landing-pages-4 .row-ilo-landing-pages-4 .box-ilo-landing-pages-4-1 {
+  width: 500px;
+  height: auto;
+}
+
+.container .ilo-landing-pages-4 .row-ilo-landing-pages-4 .box-ilo-landing-pages-4-1 p {
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-color);
+  line-height: 1.5;
+  margin: 20px auto;
+  width: 70%;
+}
+
+.container .ilo-landing-pages-4 .row-ilo-landing-pages-4 .box-ilo-landing-pages-4-1 p span {
+  color: #960A55;
+  font-weight: bold;
+}
+
+.container .ilo-landing-pages-4-1-2 {
+  position: relative;
+  padding: 100px 150px;
+  margin-top: -3%;
+  background-color: #FAFAFA;
+}
+
+.container .ilo-landing-pages-4-1-2 span {
+  font-size: 20px;
+  width: 450px;
+  display: block;
+  margin: 0px auto;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-color);
+}
+
+.container .ilo-landing-pages-4-1-2 span span {
+  color: #007A90;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .box-ilo-landing-pages-4-1-2 {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .box-ilo-landing-pages-4-1-2 img {
+  width: 450px;
+  height: 400px;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .box-ilo-landing-pages-4-1-2 img.door {
+  width: 250px;
+  height: 450px;
+  margin-right: 100px;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .box-ilo-landing-pages-4-1-2 .text-ilo-landing-pages-4-1-2 {
+  width: 430px;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .box-ilo-landing-pages-4-1-2 .text-ilo-landing-pages-4-1-2 p {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .box-ilo-landing-pages-4-1-2 .text-ilo-landing-pages-4-1-2 p span {
+  color: var(--text-comment);
+  font-style: italic;
+  text-align: left;
+  font-weight: bold;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .box-ilo-landing-pages-4-1-2 .text-ilo-landing-pages-4-1-2 p span.biru {
+  display: inline;
+  font-size: 17px;
+  text-align: unset;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .box-ilo-landing-pages-4-1-2.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .text-ilo-landing-pages-4-1-2-center {
+  width: 400px;
+  margin-top: 10%;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .text-ilo-landing-pages-4-1-2-center p {
+  font-size: 18px;
+  text-align: center;
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .text-ilo-landing-pages-4-1-2-center p span {
+  font-style: italic;
+  color: var(--text-comment);
+  display: inline;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .text-ilo-landing-pages-4-1-2-flex {
+  width: 100%;
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .text-ilo-landing-pages-4-1-2-flex p {
+  color: var(--text-color);
+  height: 200px;
+  line-height: 1.8;
+  font-family: "Noto Sans", sans-serif;
+  max-width: 450px;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .text-ilo-landing-pages-4-1-2-flex p span {
+  display: inline;
+  color: var(--text-comment);
+  font-style: italic;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .text-ilo-landing-pages-4-1-2-center {
+  width: 70%;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .text-ilo-landing-pages-4-1-2-center h2 {
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-comment);
+  text-align: center;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .box-ilo-landing-pages-4-1-3 {
+  width: 100%;
+  position: relative;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10%;
+}
+
+.container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .box-ilo-landing-pages-4-1-3 img {
+  width: 450px;
+}
+
+.container .ilo-landing-page-5 {
+  position: relative;
+  padding: 100px 150px;
+  background-color: var(--bg-color);
+}
+
+.container .ilo-landing-page-5 h2 {
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-color);
+  text-align: center;
+  margin: 0px auto;
+  width: 500px;
+}
+
+.container .ilo-landing-page-5 h2 span {
+  color: var(--text-comment);
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-img-1 {
+  width: 100%;
+  margin-top: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-img-1 img {
+  width: 600px;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-img-1 img.guru {
+  width: 650px;
+  margin-top: 10%;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-img-2 {
+  margin-top: 5%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-img-2 img {
+  width: 600px;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-img-2 img.seminar {
+  width: 650px;
+  margin-top: 5%;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 span.title-landing-page-5 {
+  width: 500px;
+  margin: 50px auto;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 span.title-landing-page-5 span {
+  color: var(--text-comment);
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-ilo-landing-page-5 {
+  width: 700px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 10px;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-ilo-landing-page-5 img {
+  width: 130px;
+  height: auto;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-ilo-landing-page-5 p {
+  font-size: 15px;
+  font-family: "Noto Sans", sans-serif;
+  margin: 0px 40px;
+  line-height: 1.5;
+  color: var(--text-comment);
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-ilo-landing-page-5.small {
+  width: 100%;
+  margin-top: 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-ilo-landing-page-5.small img {
+  width: 500px;
+  height: auto;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-ilo-landing-page-5.small .text-box-ilo-landing-page-5-small {
+  width: 100%;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-ilo-landing-page-5.small .text-box-ilo-landing-page-5-small ul h3 {
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-comment);
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-ilo-landing-page-5.small .text-box-ilo-landing-page-5-small ul li {
+  list-style-position: inside;
+  margin: 50px 0px;
+  list-style-type: none;
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-ilo-landing-page-5.small .text-box-ilo-landing-page-5-small ul li span {
+  color: var(--text-comment);
+  font-weight: bold;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 span {
+  font-family: "Noto Sans", sans-serif;
+  color: var(--text-color);
+  width: 400px;
+  text-align: center;
+  margin-top: 10%;
+  margin: 90px auto;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-ilo-landing-page-5-flex {
+  width: 700px;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .ilo-landing-page-5 .row-ilo-landing-page-5 .box-ilo-landing-page-5-flex img {
+  cursor: pointer;
+  width: 300px;
+  height: auto;
+}
+
+.container .footer-ilo-landing {
+  padding: 100px;
+  background-color: var(--primary-color);
+  background-image: url(../images/Pathfooter.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-position-y: -60px;
+}
+
+.container .footer-ilo-landing footer {
+  width: 500px;
+  height: auto;
+}
+
+.container .footer-ilo-landing footer .box-footer-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.container .footer-ilo-landing footer .box-footer-1 img {
+  width: 120px;
+  height: 80px;
+}
+
+.container .footer-ilo-landing footer .box-footer-1 img.back {
+  width: 80px;
+}
+
+.container .footer-ilo-landing footer .box-footer-1 img.home {
+  width: 100px;
+}
+
+.container .footer-ilo-landing footer .box-footer-1 img.logof {
+  width: 80px;
+  height: 50px;
+  display: inline-block;
+  margin-top: 5%;
+}
+
+.container .footer-ilo-landing footer .box-footer-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-top: 5%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .footer-ilo-landing footer .box-footer-2 h4 {
+  font-family: "Noto Sans", sans-serif;
+  color: var(--bg-color);
+  font-size: 20px;
+}
+
+.container .footer-ilo-landing footer .box-footer-2 p {
+  color: var(--text-comment);
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.8;
+}
+/*# sourceMappingURL=style.css.map */
