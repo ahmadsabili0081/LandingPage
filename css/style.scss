@@ -42,14 +42,16 @@ $notoSans:  'Noto Sans', sans-serif;
     .banner-ILO{
         width: 100%;
         min-height: 100vh;
-        background:  url(../images/Path2.png) var(--primary-color);
-        background-size:contain;
-        background-repeat: no-repeat;
-        background-position-y: 640px;
+        background:  var(--primary-color);
         display: flex;
         position: relative;
         justify-content: center;
         align-items: center;
+        .path-banner{
+            width: 100%;
+            position: absolute;
+            bottom: -90px;
+        }
         .box-banner-ilo-2{
             width: 850px;
             height: 450px;
@@ -127,6 +129,11 @@ $notoSans:  'Noto Sans', sans-serif;
         padding: 200px 150px;
         background-color: var(--bg-color);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+        .container-ilo-landing{
+            max-width: 1200px;
+            margin: 0px auto;
+            height: auto;
+        }
         .text-box-ilo{
             margin: 0px auto;
             max-width: 500px;
@@ -155,14 +162,7 @@ $notoSans:  'Noto Sans', sans-serif;
                 align-items: center;
                 position: relative;
                 img{
-                    width: 200px;
-                    height: 400px;
-                }
-                img.female{
-                    width: 180px;
-                    height: 370px;
-                    display: block;
-                    margin-top: 80px;
+                    width: 450px;
                 }
                 span{
                     font-family: $fontFamily;
@@ -339,13 +339,21 @@ $notoSans:  'Noto Sans', sans-serif;
     .ilo-landing-pages-2{
         position: relative;
         height: auto;
-        margin-top: -8.9%;
-        padding:100px 150px;
-        background: url(../images/Path2.png) var(--primary-color);
-        background-size: contain;
-        background-position-y: 930px;
-        background-repeat: no-repeat;
-        clip-path: polygon(0 0, 100% 11%, 100% 99%, 0% 100%);
+        margin-top: -7.9%;
+        padding:100px 100px;
+        background: var(--primary-color);
+        clip-path: polygon(0 0, 100% 7%, 100% 99%, 0% 100%);
+        .path-landing-pages-2{
+            position: absolute;
+            width: 100%;
+            bottom: -70px;
+            left: 0;
+        }
+        .container-ilo-landing-pages-2{
+            max-width: 1200px;
+            margin: 0px auto;
+
+        }
         .row-ilo-landing-pages-3{
             display: flex;
             justify-content: space-between;
@@ -356,14 +364,12 @@ $notoSans:  'Noto Sans', sans-serif;
                 height: auto;
                 img{
                     width: 70%;
-                    height: 70%;
                     display: block;
                     margin: 20px auto;
                 }
                 img.circlePercentage{
                     width: 200px;
                     display: block;
-                    height: 200px;
                     margin: 20px auto;
                 }
                 .text-ilo-landing-pages-3{
@@ -426,6 +432,10 @@ $notoSans:  'Noto Sans', sans-serif;
         padding: 100px 150px;
         background-color: #FAFAFA;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 97%);
+        .container-ilo-landing-pages-3{
+            max-width: 1200px;
+            margin: 0px auto;
+        }
         h1{
             font-family: $notoSans;
             width: 550px;
@@ -459,15 +469,10 @@ $notoSans:  'Noto Sans', sans-serif;
                 }
                 img{
                     width: 400px;
-                    height: 300px;
-                }
-                img.seminar{
-                    height: 450px;
                 }
             }
             .ilo-landing-pages-3-1-4{
                 width: 100%;
-                height: auto;
                 height: 420px;
                 display: flex;
                 justify-content: space-between;
@@ -509,7 +514,6 @@ $notoSans:  'Noto Sans', sans-serif;
                 }
                 img{
                     width: 300px;
-                    height: 400px;
                 }
             }
             .ilo-landing-pages-3-1-4.reverse{
@@ -538,7 +542,6 @@ $notoSans:  'Noto Sans', sans-serif;
                 align-items: center;
                 img{
                     width: 400px;
-                    height: 400px;
                 }
                 .box-ilo-landing-pages-4-1-2{
                     width: 550px;
@@ -628,13 +631,19 @@ $notoSans:  'Noto Sans', sans-serif;
     .ilo-landing-pages-4{
         position: relative;
         padding: 150px 100px;
-        margin-top: -7.6%;
+        margin-top: -6.6%;
         background-color: var(--primary-color);
-        clip-path: polygon(0 0, 100% 11%, 100% 99%, 0% 100%);
-        background-image: url(/images/Path2.png);
-        background-position-y: 850px;
-        background-size: contain;
-        background-repeat: no-repeat;
+        clip-path: polygon(0 0, 100% 7%, 100% 99%, 0% 100%);
+        .ilo-path-landing{
+            width: 100%;
+            left: 0;
+            position: absolute;
+            bottom:-40px;
+        }
+        .container-ilo-landing-pages-4{
+            max-width: 1200px;
+            margin: 0px auto;
+        }
         h1{
             font-family: $notoSans;
             max-width: 500px;
@@ -680,6 +689,10 @@ $notoSans:  'Noto Sans', sans-serif;
         padding: 100px 150px;
         margin-top: -3%;
         background-color: #FAFAFA;
+        .container-ilo-landing-pages-4-1-2{
+            max-width: 1200px;
+            margin: 0px auto;
+        }
         span{
             font-size: 20px;
             width: 450px;
@@ -706,11 +719,9 @@ $notoSans:  'Noto Sans', sans-serif;
                 align-items: center;
                 img{
                     width: 450px;
-                    height: 400px;
                 }
                 img.door{
                     width: 250px;
-                    height: 450px;
                     margin-right: 100px;
                 }
                 .text-ilo-landing-pages-4-1-2{
@@ -797,6 +808,10 @@ $notoSans:  'Noto Sans', sans-serif;
         position: relative;
         padding: 100px 150px;
         background-color: var(--bg-color);
+        .container-ilo-landing-page-5{
+            max-width: 1200px;
+            margin: 0px auto;
+        }
         h2{
             font-family: $notoSans;
             color: var(--text-color);
@@ -920,14 +935,16 @@ $notoSans:  'Noto Sans', sans-serif;
         }
     }
     .footer-ilo-landing{
-        padding: 100px;
+        padding: 100px 0px;
         background-color: var(--primary-color);
-        background-image: url(../images/Pathfooter.png);
-        background-repeat: no-repeat;
-        background-size: contain;
         display: flex;
         justify-content: center;
-        background-position-y: -60px;
+        position: relative;
+        .footer-path{
+            width: 100%;
+            top: -80px;
+            position: absolute;
+        }
         footer{
             width: 500px;
             height: auto;
@@ -935,8 +952,7 @@ $notoSans:  'Noto Sans', sans-serif;
                 display: flex;
                 justify-content: space-evenly;
                 img{
-                    width: 120px;
-                    height: 80px;
+                    width: 100%;
                 }
                 img.back{
                     width: 80px;
@@ -949,6 +965,10 @@ $notoSans:  'Noto Sans', sans-serif;
                     height: 50px;
                     display: inline-block;
                     margin-top: 5%;
+                }
+                img.flag{
+                    width: 70%;
+                    margin-top: 30px;
                 }
             }
             .box-footer-2{
@@ -970,5 +990,122 @@ $notoSans:  'Noto Sans', sans-serif;
             }
         }
     }
+    .container-content{
+        position: fixed;
+        z-index: 300;
+        user-select: none;
+        top: 0;
+        overflow-y: hidden;
+        display: none;
+        transition: 0.2s ease-in;
+        width: 100%;
+        min-height: 100vh;
+        background-color: rgba(0, 0, 0, 0.342);
+        .content{
+            width: 700px;
+            height: auto;
+            padding: 20px;
+            border-radius: 15px;
+            animation-name: top;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-in-out;
+            position: relative;
+            background-color: #FAFAFA;
+            .box-modal{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                ul{
+                    width: 50%;
+                    margin-top: 50px;
+                    li{
+                       list-style-type: none;
+                       font-family: $notoSans;
+                       text-align: justify;
+                       margin: 20px;
+                       margin-left: 20px;
+                       position: relative;
+                       color: var(--text-comment);
+                       img{
+                           position: absolute;
+                           left: -30px;
+                           width: 20px;
+                       }
+                    }
+                }
+                ul.samping{
+                    li{
+                        text-align: right;
+                        position: relative;
+                        img.samping{
+                          position: absolute;
+                          left: 102%;
+                        }
+                        img.modal2{
+                            position: absolute;
+                            left: 102%;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+            img.gambar-content{
+                width: 300px;
+                margin:0px auto;
+                display: block;
+            }
+        }
+    }
+    .container-content.modal-2{
+        .content{
+            img.gambar-content-2{
+                width: 70%;
+            }
+        }
+    }
+    .container-content#blur.active{
+        transition: 0.3s ease-in;
+        min-height: 100vh;
+        display: block;
+        .content{
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+
+            position: absolute;
+            i{
+                cursor: pointer;
+                font-size: 25px;
+                position: absolute;
+                right: 20px;
+            }
+        }
+    }
+    .container-content#blur2.modal-2.active2{
+        transition: 0.3s ease-in;
+        min-height: 100vh;
+        display: block;
+        .content{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            i{
+                cursor: pointer;
+                font-size: 25px;
+                position: absolute;
+                right: 20px;
+            }
+        }
+    }
 // container
+}
+@keyframes top{
+    from{
+        top:-300px;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
