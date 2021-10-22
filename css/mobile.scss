@@ -200,7 +200,6 @@
                         flex-direction: column;
                         img{
                             width: 300px;
-                            height: auto;
                         }
                     }
                 }
@@ -282,7 +281,7 @@
                 .box-ilo-landing-pages{
                     width: 100%;
                     img{
-                       width: 50%;
+                       width: 100%;
                     }
                     span{
                         width: 200px;
@@ -688,13 +687,14 @@
                 .box-modal{
                     flex-direction: column;
                     ul{
-                        margin-top: 0px;
+                        margin-top: -0px;
                         width: 100%;
                         li{
                             img{
                                 display: block;
                                 left: -30px;
                                 top: 0;
+                                text-align: justify;
                             }
                         }
                     }
@@ -716,7 +716,7 @@
                     flex-direction: column;
                     ul{
                         width: 100%;
-                        margin-top: 20px;
+                        margin-top: 0px;
                         li{
                             text-align: left;
                             img{

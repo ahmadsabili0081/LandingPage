@@ -232,7 +232,6 @@
   }
   .container .ilo-landing-pages-4-1-2 .row-ilo-landing-pages-4-1-2 .box-ilo-landing-pages-4-1-2 .box-ilo-landing-pages-4-1-3 img {
     width: 300px;
-    height: auto;
   }
   .container .ilo-landing-page-5 {
     padding: 100px 50px;
@@ -313,7 +312,7 @@
     width: 100%;
   }
   .container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages img {
-    width: 50%;
+    width: 100%;
   }
   .container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages span {
     width: 200px;
@@ -778,13 +777,14 @@
             flex-direction: column;
   }
   .container .container-content#blur.active .content .box-modal ul {
-    margin-top: 0px;
+    margin-top: -0px;
     width: 100%;
   }
   .container .container-content#blur.active .content .box-modal ul li img {
     display: block;
     left: -30px;
     top: 0;
+    text-align: justify;
   }
   .container .container-content#blur.active .content .box-modal ul.samping li {
     list-style-position: inside;
@@ -805,7 +805,7 @@
   }
   .container .container-content#blur2.modal-2.active2 .content .box-modal ul {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 0px;
   }
   .container .container-content#blur2.modal-2.active2 .content .box-modal ul li {
     text-align: left;

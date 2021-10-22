@@ -211,7 +211,8 @@
 }
 
 .container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages img {
-  width: 450px;
+  width: 750px;
+  margin: 0px auto;
 }
 
 .container .box-ilo-landing .row-ilo-landing .box-ilo-landing-pages span {
